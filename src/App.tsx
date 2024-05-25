@@ -2,12 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import { RemoteComponent } from "@paciolan/remote-component";
-
-// const url = "https://raw.githubusercontent.com/Paciolan/remote-component/master/examples/remote-components/HelloWorld.js"; // prettier-ignore
-const url = "https://app.gmgc.vn/assets/main.js";
-
-const HelloWorld = (props: any) => <RemoteComponent url={url} {...props} />;
+import HelloWorld from "RemoteComponent/HelloWorld";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -23,7 +18,7 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <HelloWorld name="Paciolan" />
+      <HelloWorld />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
