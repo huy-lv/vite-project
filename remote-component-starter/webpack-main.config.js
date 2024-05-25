@@ -34,7 +34,8 @@ module.exports = {
   },
   externals: {
     ...externals,
-    "remote-component.config.js": "remote-component.config.js"
+    "remote-component.config.js": "remote-component.config.js",
+    "@mui/material": "@mui/material"
   },
   module: {
     rules: [
