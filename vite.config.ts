@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      'remote-component.config.js': path.join(__dirname, 'remote-component.config.js')
+      'remote-component.config.js': path.resolve(__dirname, 'remote-component.config.js')
     }
   }
 })
