@@ -1,7 +1,7 @@
 import HelloWorld from "./HelloWord";
 
 function App() {
-  return HelloWorld
+  return <HelloWorld/>
 }
 
 export default App

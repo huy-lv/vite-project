@@ -9,7 +9,7 @@ export default defineConfig({
     federation({
       name: 'app',
       remotes: {
-        RemoteComponent: 'https://github.com/huy-lv/vite-project/blob/test/RemoteComponent/dist/assets/remoteEntry.js',
+        RemoteComponent: 'https://raw.githubusercontent.com/huy-lv/vite-project/test/RemoteComponent/dist/assets/remoteEntry.js',
       },
       shared: ['react','react-dom', '@mui/material']
     })
