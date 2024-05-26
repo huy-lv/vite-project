@@ -4,19 +4,20 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "dev": "vite --port 5010 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview --port 5001 --strictPort"
   },
   "dependencies": {
+    "@babel/cli": "^7.24.6",
+    "@babel/preset-env": "^7.24.6",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.15.18",
     "@paciolan/remote-component": "^2.13.0",
     "@types/node": "^20.12.12",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "@emotion/react": "^11.11.4",
-    "@emotion/styled": "^11.11.0",
-    "@mui/material": "^5.15.12"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
@@ -28,6 +29,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
     "typescript": "^5.2.2",
-    "vite": "^5.2.0"
+    "vite": "^5.2.0",
+    "vite-plugin-externals": "^0.6.2"
   }
 }

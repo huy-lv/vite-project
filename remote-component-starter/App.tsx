@@ -1,6 +1,5 @@
-import { ReactElement } from 'react';
 import { Button } from '@mui/material';
 
-export default function ButtonUsage(): ReactElement {
+export default function ButtonUsage() {
   return <Button variant="contained">Hello world</Button>;
 }

@@ -5,7 +5,7 @@ import "./App.css";
 import { RemoteComponent } from "@paciolan/remote-component";
 
 // const url = "https://raw.githubusercontent.com/Paciolan/remote-component/master/examples/remote-components/HelloWorld.js"; // prettier-ignore
-const url = "https://app.gmgc.vn/assets/main.js";
+const url = "http://localhost:5002/dist/index.js";
 
 const HelloWorld = (props: any) => <RemoteComponent url={url} {...props} />;
 
