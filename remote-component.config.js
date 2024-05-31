@@ -1,6 +1,6 @@
 module.exports = {
   resolve: {
     react: require("react"),
-    "@mui/material": require("@mui/material"),
+    "@material-ui/core": require("@material-ui/core"),
   },
 };
