@@ -2,10 +2,12 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import HelloWorld from "RemoteComponent/HelloWorld";
+import { RemoteComponent } from "@paciolan/remote-component";
 
 function App() {
+  const url = `http://localhost:5010/RemoteComponent/dist/main.js`;
   const [count, setCount] = useState(0);
+  const HelloWorld = (props: any) => <RemoteComponent url={url} {...props} />;
 
   return (
     <>
@@ -18,7 +20,7 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <HelloWorld />
+      <HelloWorld name="WP Test"/>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}

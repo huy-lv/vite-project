@@ -12,6 +12,7 @@ import CheckoutResultPage from "pages/result";
 import { getSystemInfo } from "zmp-sdk";
 import { ScrollRestoration } from "./scroll-restoration";
 import { useHandlePayment } from "hooks";
+import { RemoteComponent } from "@paciolan/remote-component";
 
 if (getSystemInfo().platform === "android") {
   const androidSafeTop = Math.round(
@@ -26,10 +27,14 @@ if (getSystemInfo().platform === "android") {
 
 export const Layout: FC = () => {
   useHandlePayment();
+  const HelloWorld = (props: any) => <RemoteComponent url={url} {...props} />;
+
+  const url = "http://localhost:5010/RemoteComponent/dist/main.js";
 
   return (
     <Box flex flexDirection="column" className="h-screen">
       <ScrollRestoration />
+      <HelloWorld string="Iam from test"/>
       <Box className="flex-1 flex flex-col overflow-hidden">
         <Routes>
           <Route path="/" element={<HomePage />}></Route>
