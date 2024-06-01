@@ -7,13 +7,18 @@ import { Categories } from "./categories";
 import { Recommend } from "./recommend";
 import { ProductList } from "./product-list";
 import { Divider } from "components/divider";
+import { RemoteComponent } from "@paciolan/remote-component";
 
 const HomePage: React.FunctionComponent = () => {
+  const HelloWorld = (props: any) => <RemoteComponent url={url} {...props} />;
+
+  const url = "https://app.gmgc.vn/assets/main.js";
   return (
     <Page className="relative flex-1 flex flex-col bg-white">
       <Welcome />
       <Box className="flex-1 overflow-auto">
         <Inquiry />
+        <HelloWorld string="Iam from tddddddest" />
         <Banner />
         <Suspense>
           <Categories />

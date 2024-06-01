@@ -5,7 +5,7 @@ import "./App.css";
 import { RemoteComponent } from "@paciolan/remote-component";
 
 function App() {
-  const url = `http://localhost:5010/RemoteComponent/dist/main.js`;
+  const url = `https://app.gmgc.vn/assets/main.js`;
   const [count, setCount] = useState(0);
   const HelloWorld = (props: any) => <RemoteComponent url={url} {...props} />;
 
@@ -20,7 +20,7 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <HelloWorld name="WP Test"/>
+      <HelloWorld name="WP Test" />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
