@@ -1,56 +1,7 @@
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("react"), require("@mui/material"));
-	else if(typeof define === 'function' && define.amd)
-		define(["react", "@mui/material"], factory);
-	else {
-		var a = typeof exports === 'object' ? factory(require("react"), require("@mui/material")) : factory(root["react"], root["@mui/material"]);
-		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
-	}
-})(this, (__WEBPACK_EXTERNAL_MODULE__155__, __WEBPACK_EXTERNAL_MODULE__823__) => {
-return /******/ (() => { // webpackBootstrap
+/******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
-/******/ 	var __webpack_modules__ = ({
-
-/***/ 823:
-/***/ ((module) => {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE__823__;
-
-/***/ }),
-
-/***/ 155:
-/***/ ((module) => {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE__155__;
-
-/***/ })
-
-/******/ 	});
-/************************************************************************/
-/******/ 	// The module cache
-/******/ 	var __webpack_module_cache__ = {};
-/******/ 	
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
-/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
-/******/ 		if (cachedModule !== undefined) {
-/******/ 			return cachedModule.exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
-/******/ 			// no module.loaded needed
-/******/ 			exports: {}
-/******/ 		};
-/******/ 	
-/******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
+/******/ 	// The require scope
+/******/ 	var __webpack_require__ = {};
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
@@ -95,8 +46,6 @@ module.exports = __WEBPACK_EXTERNAL_MODULE__155__;
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-(() => {
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
@@ -105,18 +54,18 @@ __webpack_require__.d(__webpack_exports__, {
   "default": () => (/* binding */ index)
 });
 
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__(155);
-var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
-// EXTERNAL MODULE: external "@mui/material"
-var material_ = __webpack_require__(823);
+;// CONCATENATED MODULE: external "react"
+const external_react_namespaceObject = require("react");
+var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_namespaceObject);
+;// CONCATENATED MODULE: external "@mui/material"
+const material_namespaceObject = require("@mui/material");
 ;// CONCATENATED MODULE: ./App.jsx
 
 
 function App(_ref) {
   var _ref$string = _ref.string,
     string = _ref$string === void 0 ? "Hello, Iam test string" : _ref$string;
-  return /*#__PURE__*/external_react_default().createElement((external_react_default()).Fragment, null, /*#__PURE__*/external_react_default().createElement("div", null, /*#__PURE__*/external_react_default().createElement("h2", null, string), /*#__PURE__*/external_react_default().createElement(material_.Button, {
+  return /*#__PURE__*/external_react_default().createElement((external_react_default()).Fragment, null, /*#__PURE__*/external_react_default().createElement("div", null, /*#__PURE__*/external_react_default().createElement("h2", null, string), /*#__PURE__*/external_react_default().createElement(material_namespaceObject.Button, {
     variant: "contained",
     color: "error"
   }, "Testing Material UI")), /*#__PURE__*/external_react_default().createElement("h3", null, "Title 3"));
@@ -125,9 +74,8 @@ function App(_ref) {
 ;// CONCATENATED MODULE: ./index.jsx
 
 /* harmony default export */ const index = (App_0);
-})();
-
-/******/ 	return __webpack_exports__;
+var __webpack_export_target__ = exports;
+for(var i in __webpack_exports__) __webpack_export_target__[i] = __webpack_exports__[i];
+if(__webpack_exports__.__esModule) Object.defineProperty(__webpack_export_target__, "__esModule", { value: true });
 /******/ })()
 ;
-});
