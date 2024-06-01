@@ -29,7 +29,7 @@ export const Layout: FC = () => {
   useHandlePayment();
   const HelloWorld = (props: any) => <RemoteComponent url={url} {...props} />;
 
-  const url = "http://localhost:5010/RemoteComponent/dist/main.js";
+  const url = "https://raw.githubusercontent.com/huy-lv/vite-project/zalo/zaui-coffee/main.js";
 
   return (
     <Box flex flexDirection="column" className="h-screen">
