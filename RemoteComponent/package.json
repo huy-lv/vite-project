@@ -2,10 +2,11 @@
   "name": "shared",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "browser": "dist/main.js",
   "scripts": {
     "dev": "vite --port 5001 --strictPort",
-    "build": "vite build",
+    "wp_build": "npm run clean && cross-env NODE_ENV=production webpack --mode production",
+    "clean": "rimraf dist",
     "preview": "vite preview --port 5001 --strictPort"
   },
   "dependencies": {
